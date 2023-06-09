@@ -1,0 +1,823 @@
+@font-face {
+    font-family:onepiece;
+    src: url(OnePiece-zAqL.ttf);
+}
+@font-face {
+    font-family: kamikaze;
+    src: url(Kamikaze3DGradient-Italic.ttf);
+}
+body{
+    width: 100vw;
+    background-color: black;
+    margin: 0;
+    display: block;
+    object-fit: contain;
+    overflow-x: hidden;
+}
+@media (max-width:1800px){
+    body{
+        width: 100vw;
+        background-color: black;
+        margin: 0;
+        display: block;
+        object-fit: contain;
+        overflow-x: scroll;
+    }   
+}
+.hline{
+    color:gold;
+    font-family: "OnePiece";
+    font-size:80px;
+    margin:0;
+    margin-top:50px;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: overline;
+    text-decoration-thickness: 5px ;
+    opacity: 100%;
+}
+.o{
+    font-weight: normal;
+    color: red;
+    font-family: "OnePiece";
+    font-size:80px;
+    margin:0;
+    margin-top:50px;
+    transition: 2s;
+}
+.wfp{
+    display: flex;
+    justify-content: center;
+}
+.wpf1{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: 0px 0px 10px gold;
+}
+.wpf1 .o:hover{
+    color:red;
+    font-size:160px;
+    margin-top:-10px;
+    padding: 10px;
+    padding-bottom: 0px;
+    opacity:100%;
+    cursor: pointer;
+}
+.main-head{
+    width:100vw;
+    display:block;
+    height:300px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+.head{
+    display:flex;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:300px;
+    border-radius: 50px;
+}
+.logo{
+    width:400px;
+    margin:1px;
+    padding:40px;
+    transition:1s;
+    box-shadow: 1px 1px 20px black;
+}
+.bg-img{
+    width:100%;
+    height:300px;
+    position:absolute;
+    object-fit: contain;
+    object-position: top;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: -1;
+    border-radius: 50px;
+    transition:2s;
+}
+.bg-img1{
+    width:100%;
+    height:300px;
+    position:absolute;
+    object-fit: cover;
+    object-position: top;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: -1;
+    border-radius: 50px;
+    transition:2s;
+}
+video{
+    width:100%;
+    height:100%;
+    position:absolute;
+    object-fit: cover;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: -1;
+    border-radius: 50px;
+    opacity: 0;
+    transition:2s;
+}
+.mcontent{
+    display:flex;
+}
+.main{
+    display:flex;
+    flex-direction: column;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(219, 188, 188);
+    font-family:"OnePiece",arial;
+    font-weight: bold;
+    font-size:25px;
+    margin-top:0px;
+    margin-bottom:40px;
+    transition: 1s;
+    letter-spacing: 1px;
+}
+.content1:hover{
+    font-size:30px;
+    color:red;
+    cursor:pointer;
+}
+.content1{
+    font-family: "Onepiece";
+    color: gold;
+    transition: 0.5s;
+}
+.contenth{
+    width:100%;
+    font-family: "ONEPIECE" ;
+    color: gold;
+    font-size: 40px;
+    margin-left: 200px;
+    margin-bottom: 0;
+}
+.o1{
+    font-weight: normal;
+    color: red;
+    font-family: "OnePiece";
+    font-size:50px;
+}
+.head .logo:hover{
+    width:500px;
+    opacity:80%;
+    cursor: pointer;
+}
+.head .logo:hover~video{
+    opacity:100%;
+    cursor: pointer;
+}
+.head .logo:active{
+    width:800px;
+    opacity:0%;
+    cursor: pointer;
+}
+.head .logo:active~video{
+    opacity:100%;
+    cursor: pointer;
+}
+.oim{
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    object-fit: cover;
+    object-position: center;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    z-index:-4;
+    opacity:30%;
+}
+.grid{
+    display: grid;
+    width:100%;
+    grid-template-columns: 300px 300px 300px 300px;
+    column-gap:150px;
+    row-gap: 100px;
+    margin:0;
+    padding: 0;
+    margin-left: 120px;
+}
+.infoluffy,.inforobin,.infozoro,.infobrook,
+.infochopper,.infojinbe{
+    width:300px;
+    font-family: "coromoant";
+    font-weight: bold;
+    color:aliceblue;
+    position:absolute;
+    top:75px;
+    left:380px;
+    opacity:0;
+    z-index: 200;
+    pointer-events: none;
+}
+.grid1{
+    display:grid;
+    grid-template-columns: 300px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 800px;
+    margin-right: 0;
+    row-gap: 100px;
+}
+.over{
+    display:flex;
+}
+.captain{
+    margin-left:0px;
+    margin-top: 30px;
+    margin-right: 0px;
+}
+.luffy{
+    width:300px;
+    transition:1s;
+    position: relative;
+    opacity: 100%;
+    cursor: pointer;
+}
+.luffy:hover{
+    width:350px;
+    box-shadow: 0px 0px 20px gold;
+}
+.straw{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.strawhats{
+    color:red;
+    font-family: "OnePiece",arial;
+    font-weight: bold;
+    font-size: 100px;
+    background-image: url(images/541699.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    margin:0px;
+    padding:40px;
+    padding-left: 500px;
+    padding-right: 500px;
+    border: 5px solid;
+    border-top: none;
+    border-radius: 100px;
+    border-right: none;
+    border-left: none;
+}
+.robin hr{
+    height: 1px;
+    background-color:purple;
+    border-style: solid;
+    border-color: violet;
+    box-shadow: 0px 0px 10px violet;
+}
+.monkey hr{
+    height: 1px;
+    background-color:red;
+    border-style: solid;
+    border-color:tomato;
+    box-shadow: 0px 0px 10px whitesmoke;
+}
+.zoro hr{
+    height: 1px;
+    background-color:darkgreen;
+    border-style: solid;
+    border-color:rgb(0, 255, 0);
+    box-shadow: 0px 0px 10px rgb(0, 255, 0);
+}
+.nami hr{
+    height: 1px;
+    background-color:orangered;
+    border-style: solid;
+    border-color:lightsalmon;
+    box-shadow: 0px 0px 10px lightsalmon;
+}
+.chopper hr{
+    height: 1px;
+    background-color:fuchsia;
+    border-style: solid;
+    border-color:pink;
+    box-shadow: 0px 0px 10px pink;
+}
+.sanji hr{
+    height: 1px;
+    background-color:blue;
+    border-style: solid;
+    border-color:skyblue;
+    box-shadow: 0px 0px 10px skyblue;
+}
+.ussop hr{
+    height: 1px;
+    background-color:goldenrod;
+    border-style: solid;
+    border-color:yellow;
+    box-shadow: 0px 0px 10px yellow;
+}
+.franky hr{
+    height: 1px;
+    background-color:skyblue;
+    border-style: solid;
+    border-color:lightblue;
+    box-shadow: 0px 0px 10px whitesmoke;
+}
+.brook hr{
+    height: 1px;
+    background-color:black;
+    border-style: solid;
+    border-color:gainsboro;
+    box-shadow: 0px 0px 10px whitesmoke;
+}
+.jinbe hr{
+    height: 1px;
+    background-color:blue;
+    border-style: solid;
+    border-color:skyblue;
+    box-shadow: 0px 0px 10px skyblue;
+}
+.crew .luffy:hover~.line,.crew .luffy:hover~.line1{
+    opacity: 100%;
+}
+.crew{
+    position: relative;
+}
+.line,.line1{
+    opacity: 0 ;
+    pointer-events: none;
+}
+.line hr,.line1 hr{
+    opacity: 0;
+}
+.line hr:nth-child(1){
+    position: absolute;
+    z-index: 200;
+    transform: rotateZ(-43deg);
+}
+.crew .luffy:hover~.line hr:nth-child(1){
+    animation:1s linear 0s 1 forwards l1;
+    transition: 0.5s;
+}
+@keyframes l1{
+    0%{
+        width:0px;
+        left:210px;
+        top:190px;
+        opacity: 100%;
+    }
+    100%{
+        width:200px;
+        left:180px;
+        top:126px;
+        opacity: 100%;
+    }
+}
+.line hr:nth-child(2){
+    position: absolute;
+    left:354px;
+    top:57px;
+    z-index: 200;
+    transition: 0.5s;
+}
+.crew .luffy:hover~.line hr:nth-child(2){
+    animation:0.5s ease-out 1s 1 forwards l2;
+    transition: 0.5s;
+}
+@keyframes l2 {
+    0%{
+        width:0px;
+        opacity: 100%;
+    }
+    100%{
+        width:300px;
+        opacity: 100%;
+    }
+}
+.line hr:nth-child(3){
+    position: absolute;
+    z-index: 200;
+    transform: rotateZ(90deg);
+}
+.crew .luffy:hover~.line hr:nth-child(3){
+    animation: 0.5s ease-out 1s 1 forwards l3;
+}
+@keyframes l3{
+    0%{
+        width:0px;
+        left:355px;
+        top:90px;
+        opacity: 100%;
+    }
+    100%{
+        width:100px;
+        left:305px;
+        top:145px;
+        opacity: 100%;
+    }
+}
+.line hr:nth-child(4){
+    position: absolute;
+    left:355px;
+    top:195px;
+    z-index: 200;
+}
+.crew .luffy:hover~.line hr:nth-child(4){
+    animation:0.5s ease-in-out 1.5s 1 forwards l2;
+    transition: 0.5s;
+}
+.line hr:nth-child(5){
+    position: absolute;
+    z-index: 200;
+    transform: rotateZ(90deg);
+}
+.crew .luffy:hover~.line hr:nth-child(5){
+    animation:0.5s ease-in-out 1.5s 1 forwards l5;
+    transition: 0.5s;
+}
+@keyframes l5{
+    0%{
+        width:0px;
+        opacity: 100%;
+        left:655.5px;
+        top:60px;
+    }
+    100%{
+        width:135px;
+        left:587.5px;
+        top:126px;
+        opacity: 100%;
+    }
+}
+.line1 hr:nth-child(1){
+    position: absolute;
+    z-index: 200;
+    transform: rotateZ(43deg);
+}
+.crew .luffy:hover~.line1 hr:nth-child(1){
+    animation:1s linear 0s 1 forwards l11;
+    transition: 0.5s;
+}
+@keyframes l11{
+    0%{
+        width:0px;
+        right:210px;
+        top:190px;
+        opacity: 100%;
+    }
+    100%{
+        width:200px;
+        right:180px;
+        top:126px;
+        opacity: 100%;
+    }
+}
+.line1 hr:nth-child(2){
+    width:300px;
+    position: absolute;
+    right:354px;
+    top:57px;
+    z-index: 200;
+    opacity:0;
+}
+.crew .luffy:hover~.line1 hr:nth-child(2){
+    animation:0.5s ease-out 1s 1 forwards l12;
+    transition: 0.5s;
+}
+@keyframes l12 {
+    0%{
+        width:0px;
+        opacity: 100%;
+    }
+    100%{
+        width:300px;
+        opacity: 100%;
+    }
+}
+.line1 hr:nth-child(3){
+    position: absolute;
+    z-index: 200;
+    transform: rotateZ(90deg);
+}
+.crew .luffy:hover~.line1 hr:nth-child(3){
+    animation: 0.5s ease-out 1s 1 forwards l13;
+}
+@keyframes l13{
+    0%{
+        width:0px;
+        right:355px;
+        top:90px;
+        opacity: 100%;
+    }
+    100%{
+        width:100px;
+        right:305px;
+        top:145px;
+        opacity: 100%;
+    }
+}
+.line1 hr:nth-child(4){
+    position: absolute;
+    right:355px;
+    top:195px;
+    z-index: 200;
+}
+.crew .luffy:hover~.line1 hr:nth-child(4){
+    animation:0.5s ease-in-out 1.5s 1 forwards l12;
+    transition: 0.5s;
+}
+.line1 hr:nth-child(5){
+    position: absolute;
+    z-index: 200;
+    transform: rotateZ(90deg);
+}
+.crew .luffy:hover~.line1 hr:nth-child(5){
+    animation:0.5s ease-in-out 1.5s 1 forwards l15;
+    transition: 0.5s;
+}
+@keyframes l15{
+    0%{
+        width:0px;
+        opacity: 100%;
+        right:654.5px;
+        top:60px;
+    }
+    100%{
+        width:135px;
+        right:587.5px;
+        top:126px;
+        opacity: 100%;
+    }
+}
+.infosanji,.infonami,.infoussop,.infofranky{
+    width:300px;
+    font-family: "coromoant";
+    font-weight: bold;
+    color:aliceblue;
+    position:absolute;
+    top:75px;
+    right:335px;
+    opacity:0;
+    z-index: 200;
+    pointer-events: none;
+}
+.crew .luffy:hover~.infoluffy,.crew .luffy:hover~.inforobin,
+.crew .luffy:hover~.infozoro,.crew .luffy:hover~.infosanji,
+.crew .luffy:hover~.infonami,.crew .luffy:hover~.infobrook,
+.crew .luffy:hover~.infochopper,.crew .luffy:hover~.infoussop,
+.crew .luffy:hover~.infofranky,.crew .luffy:hover~.infojinbe{
+    opacity: 100%;
+    transition:0.5s;
+    transition-delay: 1.5s;
+}
+.infoluffy p{
+    color: white;
+    text-shadow: 0px 0px 5px red;
+    margin: 0 ;
+    margin-bottom:4px;
+    width:300px;
+}
+.infoluffy p:nth-child(1n) span{
+    color:gold;
+    text-shadow:0px 0px 5px gold;
+}
+.infoluffy  p:nth-child(1){
+    color: red;
+    text-shadow: 0px 0px 5px tomato;
+    text-decoration: underline;
+}
+.inforobin p{
+    color: white;
+    text-shadow: 0px 0px 5px purple;
+    margin: 0 ;
+    margin-bottom:4px;
+    width:300px;
+}
+.inforobin p:nth-child(1n) span{
+    color:violet;
+    text-shadow:0px 0px 5px purple;
+}
+.inforobin  p:nth-child(1){
+    color: violet;
+    text-shadow: 0px 0px 5px blueviolet;
+    text-decoration: underline;
+}
+.infozoro p{
+    color: white;
+    text-shadow: 0px 0px 5px rgb(0, 78, 0);
+    margin: 0 ;
+    margin-bottom:4px;
+    width:300px;
+}
+.infozoro p:nth-child(1n) span{
+    color:rgb(0, 255, 0);
+    text-shadow:0px 0px 5px rgb(0, 78, 0);
+}
+.infozoro  p:nth-child(1){
+    color: rgb(0, 255, 0);
+    text-shadow: 0px 0px 5px rgb(0, 78, 0);
+    text-decoration: underline;
+}
+.infosanji p{
+    color: white;
+    text-shadow: 0px 0px 5px blue;
+    margin: 0 ;
+    margin-bottom:4px;
+    width:300px;
+}
+.infosanji p:nth-child(1n) span{
+    color: skyblue;
+    text-shadow:0px 0px 5px blue;
+}
+.infosanji  p:nth-child(1){
+    color: blue;
+    text-shadow: 0px 0px 2px skyblue;
+    text-decoration: underline;
+}
+.infonami p{
+    color: white;
+    text-shadow: 0px 0px 5px orangered;
+    margin: 0 ;
+    margin-bottom:4px;
+    width:300px;
+}
+.infonami p:nth-child(1n) span{
+    color: orange;
+    text-shadow:0px 0px 5px rgb(68, 45, 3);
+}
+.infonami  p:nth-child(1){
+    color: orange;
+    text-shadow: 0px 0px 2px orangered;
+    text-decoration: underline;
+}
+.infobrook p{
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    margin: 0 ;
+    margin-bottom:4px;
+    width:300px;
+}
+.infobrook p:nth-child(1n) span{
+    color: gray;
+    text-shadow:0px 0px 2px black;
+}
+.infobrook  p:nth-child(1){
+    color: orange;
+    text-shadow: 0px 0px 2px orangered;
+    text-decoration: underline;
+}
+.infochopper p{
+    color: white;
+    text-shadow: 0px 0px 5px purple;
+    margin: 0 ;
+    margin-bottom:4px;
+    width:300px;
+}
+.infochopper p:nth-child(1n) span{
+    color:violet;
+    text-shadow:0px 0px 5px purple;
+}
+.infochopper  p:nth-child(1){
+    color: violet;
+    text-shadow: 0px 0px 5px blueviolet;
+    text-decoration: underline;
+}
+.infoussop p{
+    color: white;
+    text-shadow: 0px 0px 5px goldenrod;
+    margin: 0 ;
+    margin-bottom:4px;
+    width:300px;
+}
+.infoussop p:nth-child(1n) span{
+    color:gold;
+    text-shadow:0px 0px 5px black;
+}
+.infoussop  p:nth-child(1){
+    color: gold;
+    text-shadow: 0px 0px 5px black;
+    text-decoration: underline;
+}
+.infofranky p{
+    color: white;
+    text-shadow: 0px 0px 5px lightskyblue;
+    margin: 0 ;
+    margin-bottom:4px;
+    width:300px;
+}
+.infofranky p:nth-child(1n) span{
+    color:skyblue;
+    text-shadow:0px 0px 5px blue;
+}
+.infofranky  p:nth-child(1){
+    color: skyblue;
+    text-shadow: 0px 0px 5px black;
+    text-decoration: underline;
+}
+.infojinbe p{
+    color: white;
+    text-shadow: 0px 0px 5px blue;
+    margin: 0 ;
+    margin-bottom:4px;
+    width:300px;
+}
+.infojinbe p:nth-child(1n) span{
+    color: skyblue;
+    text-shadow:0px 0px 5px blue;
+}
+.infojinbe  p:nth-child(1){
+    color: blue;
+    text-shadow: 0px 0px 2px skyblue;
+    text-decoration: underline;
+}
+.finalp{
+    font-family: "Coromont";
+    color: white;
+    text-shadow: 0px 0px 10px gold;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 20px;
+    padding: 20px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+.thank{
+    color:white;
+    font-family: "Yuji Hentaigana Akari",arial;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 3px;
+    padding:10px;
+    border: 2px solid gold;
+    border-radius: 60px;
+    margin-left: 40px;
+    margin-right:40px;
+}
+.thankyou{
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.thankyou ~ p{
+    font-size: 20px;
+    opacity: 0;
+    margin: 0;
+    transition: 0.5s;
+}
+.thankyou:hover + p{
+    font-size: 20px;
+    opacity:50%;
+    margin:0;
+}
+.thankyou ~ p:hover{
+    opacity:50%;
+}
+button{
+    background-color: red;
+    height:40px;
+    width:200px;
+    border:2px solid gold;
+    border-radius: 60px;
+    border-top: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    transition:1s;
+}
+button:hover{
+    width:250px;
+    height:50px;
+}
+.opl{
+    display:flex;
+    color:gold;
+    font-weight: bold;
+    font-family: 'coromorant';
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+a{
+    color:gold;
+    font-weight: bold;
+    font-family: 'coromorant';
+    font-size: 20px;
+}
